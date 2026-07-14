@@ -6,10 +6,10 @@
     <title>Focus Meow - Cute App Blocker & Focus Timer</title>
     <style>
         :root {
-            --primary-color: #FF8A48; /* Màu cam từ nút Save */
-            --secondary-color: #9D8FD6; /* Màu tím icon */
-            --bg-accent: #F3F0FF;      /* Màu nền tím pastel nhạt */
-            --text-main: #2C2A38;      /* Màu chữ tối hiện đại */
+            --primary-color: #FF8A48; /* Màu cam từ nút Save ứng dụng */
+            --secondary-color: #9D8FD6; /* Màu tím pastel */
+            --bg-accent: #F3F0FF;      
+            --text-main: #2C2A38;      
             --card-bg: #FFFFFF;
         }
         body { 
@@ -82,7 +82,7 @@
 
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1max));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
             max-width: 1000px;
             margin: 80px auto;
@@ -96,21 +96,9 @@
             text-align: left;
             border: 1px solid #F1EEFF;
         }
-        .feature-icon {
-            font-size: 32px;
-            margin-bottom: 15px;
-        }
-        .feature-card h3 {
-            margin: 0 0 10px 0;
-            font-size: 18px;
-            color: var(--text-main);
-        }
-        .feature-card p {
-            margin: 0;
-            color: #777;
-            font-size: 14px;
-            line-height: 1.5;
-        }
+        .feature-icon { font-size: 32px; margin-bottom: 15px; }
+        .feature-card h3 { margin: 0 0 10px 0; font-size: 18px; color: var(--text-main); }
+        .feature-card p { margin: 0; color: #777; font-size: 14px; line-height: 1.5; }
 
         footer {
             background-color: #FFFFFF;
@@ -122,21 +110,23 @@
             margin-top: 100px;
         }
         .footer-links { margin-bottom: 20px; }
-        .footer-links a { color: #666; text-decoration: none; margin: 0 15px; }
-        .footer-links a:hover { color: var(--primary-color); }
+        /* Kỹ thuật định tuyến tương đối để truy cập chính xác vào các folder con trên GitHub Pages */
+        .footer-links a, .nav-links a { color: #666; text-decoration: none; margin: 0 15px; }
+        .footer-links a:hover, .nav-links a:hover { color: var(--primary-color); }
     </style>
 </head>
 <body>
     <div class="nav-bar">
         <div class="nav-logo">🐾 Focus Meow</div>
         <div class="nav-links">
+            <!-- Điểm cải tiến: Trỏ trực tiếp vào thư mục con chứa file index.html pháp lý tương ứng -->
             <a href="privacy/">Privacy Policy</a>
             <a href="terms/">Terms of Use</a>
         </div>
     </div>
 
     <div class="hero-section">
-        <div class="hero-badge">🐱 The Cutest Productivity Tool</div>
+        <div class="hero-badge">🐱 The Cutest App Blocker & Timer</div>
         <h1>Stay Focused, Block Distractions<br>With Your Cat Companion</h1>
         <p>Turn your study or work sessions into a delightful experience. Block addictive apps, set custom timers, and maintain deep focus with Focus Meow.</p>
         <a href="#" class="btn-download">Get it on Google Play 🐾</a>
@@ -162,6 +152,7 @@
 
     <footer>
         <div class="footer-links">
+            <!-- Đồng bộ hóa liên kết dưới chân trang (Footer Link) -->
             <a href="privacy/">Privacy Policy</a>
             <a href="terms/">Terms of Use</a>
         </div>
